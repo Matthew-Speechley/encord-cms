@@ -1,0 +1,59 @@
+.featureGridContainer {
+  padding: 20px;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.featureGrid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.featureBox {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  max-width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  @media (min-width: 768px) {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  @media (min-width: 1024px) {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+.featureBox:hover {
+  box-shadow: 0px 10px 20px rgba(94, 68, 255, 0.1);
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.title {
+  margin: 0;
+}

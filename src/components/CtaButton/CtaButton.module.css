@@ -1,0 +1,22 @@
+.button {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 13.5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: rgb(94 68 255);
+  color: white;
+}
+
+.secondary {
+  background-color: rgb(240 240 240);
+}
+
+.button:hover {
+  opacity: 0.6;
+}
