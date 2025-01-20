@@ -89,7 +89,7 @@ export const query = graphql`
     }
   }
 
-  query LandingPageQuery($slug: String!) {
+  query LandingPageQuery($slug: String = "home") {
     contentfulLandingPage(slug: { eq: $slug }) {
       title
       description

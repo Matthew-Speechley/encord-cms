@@ -27,8 +27,8 @@ export const createPages: GatsbyNode["createPages"] = async ({
 
   result.data?.allContentfulLandingPage.nodes.forEach((page) => {
     createPage({
-      path: page.slug === "home" ? "/" : `/${page.slug}`, // Home page mapped to `/`
-      component: path.resolve("./src/pages/LandingPage/LandingPage.tsx"), // Correct the path if necessary
+      path: page.slug === "home" ? "/" : `/${page.slug}`,
+      component: path.resolve("./src/pages/LandingPage/LandingPage.tsx"),
       context: {
         slug: page.slug,
       },
